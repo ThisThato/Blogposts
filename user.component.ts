@@ -8,19 +8,12 @@ import { User } from 'src/app/models/User';
 })
 export class UserComponent {
 
-  user: User
+  user: User[];
 
-  constructor(_firstname: string, _lastname: string, _age: number, _street: string, _city: string, _state: string) {
-    this.user = {
-      firstname: _firstname,
-      lastname: _lastname,
-      age: _age,
-      address: {
-        street: _street,
-        city: _city,
-        state: _state
-      }
-    }
+  constructor() {
+    this.user = []
   }
+
+
 }
 
